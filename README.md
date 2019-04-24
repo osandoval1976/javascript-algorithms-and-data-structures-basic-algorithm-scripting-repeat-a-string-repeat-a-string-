@@ -18,19 +18,15 @@ Passed
 repeatStringNumTimes("abc", -2) should return "".
 Passed
 The built-in repeat()-method should not be used
-
+///////////////////////////////////////////////////////
 function repeatStringNumTimes(str, num) {
   // repeat after me
 let empty="";
 let text=[];
 if(num > 0){
-  for(let i=0; i < num;  i++){
-    text+=str;
-  }
-return text;
+  return text.substr(0, num)===num;
 }else{
-console.log(text);
-return empty;
+return text + empty;
 } 
 }
 repeatStringNumTimes("abc", -2);
